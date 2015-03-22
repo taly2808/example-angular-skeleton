@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html ng-app="exampleApp">
+<head>
+    <title>Books</title>
+    <link href="lib/bootstrap/bootstrap.css" rel="stylesheet" />
+    <link href="lib/bootstrap/bootstrap-theme.css" rel="stylesheet" />
+    <script src="lib/angular/angular.js"></script>
+    <script src="js/app.js"></script>
+</head>
+<body ng-controller="ExampleCtrl">
+    <div class="panel panel-primary">
+        <label>Name</label>
+        <input type="text" placeholder="Enter a name here" ng-model="name">
+        <button class="btn" ng-click="showIcon()">Show icon</button>
+        <hr/>
+        <h1>Hello {{name}} <span class="glyphicons glyphicons-skull"></span></h1>        
+    </div>
+</body>
+</html>
